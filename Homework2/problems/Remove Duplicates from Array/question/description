@@ -1,0 +1,19 @@
+Remove duplicates are allowed at most twice in the given sorted array.
+
+For example,
+Given sorted array nums = [1,1,1,2,2,3],
+
+Your function should return length = 5, with the first five elements of nums being 1, 1, 2, 2 and 3.
+
+Note:
+1. You may assume that array has enough space, the length of nums array is less than 100;
+2. Each element in given array is less than 1000;
+3. The outputs do not contain a newline (or line break '\n') in the end. 
+
+INPUT:
+6
+1 1 1 2 2 3
+
+OUTPUT:
+5
+1 1 2 2 3

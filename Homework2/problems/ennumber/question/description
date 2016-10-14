@@ -1,0 +1,12 @@
+﻿读入一个三位整数，并将该整数转换为英语。具体规则从以下五个例子
+自行总结。（输出没有回车）
+input:678
+output:six hundred and seventy eight
+input:312
+output:three hundred and twelve
+input:102
+output:one hundred and two
+input:100
+output:one hundred
+input:120
+output:one hundred and twenty
