@@ -14,12 +14,14 @@ int main()
 {
 	vector<int> v;
 	int n, a;
-	bool first = true;
+	bool first = true, desc = false;
 
 	cin >> n;
 	for (int i = 0; i < n; i++)
 	{
 		cin >> a;
+		if (v.size()>=1 && a<*(v.end()-1))
+			desc = true;
 		v.insert(v.end(), a);
 	}
 
@@ -28,7 +30,7 @@ int main()
 	for (int i = 0; i < n; i++)
 	{
 		cin >> a;
-		while (t!=v.end() && *t<=a)
+		while (t!=v.end() && ((!desc && *t<=a) || (desc && *t>=a)))
 		{
 			if (!first) cout << " ";
 			first = false;

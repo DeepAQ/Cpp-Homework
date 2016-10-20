@@ -5,7 +5,7 @@ Note:
 2. The length of nums array is less than 100;
 3. The outputs do not contain a newline (or line break '\n'). 
 
-For example, given nums1=[1,2,3,4,5,6] with m=6, and nums2=[1,4,6,7] with n=4, the merged array is [1,1,2,3,4,5,6,7]
+For example, given nums1=[1,2,3,4,5,6] with m=6, and nums2=[1,4,6,7] with n=4, the merged array is [1,1,2,3,4,4,5,6,6,7]
 
 INPUT:
 6

@@ -12,25 +12,25 @@ using namespace std;
 
 int main()
 {
-	vector<int> v;
-	int n, a;
+	int n, a, s, max = 0;
 
 	cin >> n;
 	for (int i = 0; i < n; i++)
 	{
 		cin >> a;
-		v.insert(v.end(), a);
-	}
-
-	int max = v[0], s = v[0];
-	for (int i = 1; i < n; i++)
-	{
-		if (s <= 0)
-			s = v[i];
+		if (i == 0)
+		{
+			max = s = a;
+		}
 		else
-			s += v[i];
-		if (s > max)
-			max = s;
+		{
+			if (s <= 0)
+				s = a;
+			else
+				s += a;
+			if (s > max)
+				max = s;
+		}
 	}
 
 	cout << max;
