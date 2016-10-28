@@ -1,0 +1,107 @@
+Nested Matrix
+
+Definition for nested matrix: each element of matrix can be a matrix or a primitive integer.
+
+For example:
+[ 1 2
+  3 4 ]
+or
+[ [ 1 2   [ 5 6
+    3 4],   7 8 ] ]
+
+Definition for matrix operations:
+
+Operation 0: visit and print all of the elements in the matrix with row priority
+
+For example:
+Given:
+[ 1 2
+  3 4 ]
+return: 1 2 3 4
+
+Given:
+[ [ 1 2   [ 5 6
+    3 4],   7 8 ] ]
+return: 1 2 3 4 5 6 7 8
+
+Operation 1: flatten matrix
+Definiton for flatten nested matrix: a matrix can be flattened if and only if row = 1, col = 1
+M = [A]
+return M = A
+
+For example:
+Given: M = [1]
+return: 1
+
+Operation 2: add matrix A with matrix B, see also: https://en.wikipedia.org/wiki/Matrix_addition
+Definiton for nested matrix addition:
+A = 
+[ A11 A12
+  A21 A22 ],
+B = 
+[ B11 B12
+  B21 B22 ]
+return:
+A * B = 
+[ A11+B11 A12+B12
+  A21+B21 A22+B22 ]
+
+For example:
+Given:
+A = 
+[ 1 2
+  3 4 ],
+B = 
+[ 5 6
+  7 8 ]
+return: 
+A + B = 
+[  6  8
+  10 12 ]
+
+Operation 3: multiply matrix A with matrix B, see also: https://en.wikipedia.org/wiki/Matrix_multiplication
+Definiton for nested matrix multiplication:
+A = 
+[ A11 A12
+  A21 A22 ],
+B = 
+[ B11 B12
+  B21 B22 ]
+return:
+A * B = 
+[ A11*B11+A12*B21 A11*B12+A12*B22
+  A21*B11+A22*B21 A21*B12+A22*B22 ]
+
+For example:
+Given:
+A = 
+[ 1 2
+  3 4 ],
+B = 
+[ 5 6
+  7 8 ]
+return: 
+A * B = 
+[ 19 22
+  43 50 ]
+
+Note:
+1. Matrices can auto flatten to suitable structure when they are applying addition or multiplication.
+2. All given operations is valid.
+3. Matrix number is less than 20, and Operand (OP<n>, in add/mul OP1 OP2 OP3) is less than 20.
+
+INPUT
+2           // we have 2 matrices
+2 2 2 1 1   // the 1st matrix comes with row = 2, col = 2, nested depth = 2, and each element is a matrix with row = 1, col = 1
+1 2 3 4     // the data is [[1],[2];[3],[4]] or you can mark it as [1,2;3,4] as you like
+1 2 2       // the 2nd matrix comes with row = 2, col = 2, nested depth = 1
+5 6 7 8     // the data is [5,6;7,8] or you can mark it as [[5],[6];[7],[8]] as you like
+4           // we hava 4 operations
+2 0 1 2     // operation 2: add the 1st matrix with the 2nd matrix, and store result in the 3rd one
+0 2         // operation 0: print the 3rd matrix
+3 0 1 2     // operation 3: add the 1st matrix with the 2nd matrix, and store result in the 3rd one
+0 2         // operation 0: print the 3rd matrix
+
+OUTPUT
+6 8 10 12
+19 22 43 50

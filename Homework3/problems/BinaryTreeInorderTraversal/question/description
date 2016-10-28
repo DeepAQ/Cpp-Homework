@@ -1,0 +1,8 @@
+Given a binary tree, return the inorder traversal of its nodes' values.And give the height of the tree(from 1).
+Input array is described as val(left,right).
+etc:
+input:
+7(,95(,))
+output:
+7 95
+2

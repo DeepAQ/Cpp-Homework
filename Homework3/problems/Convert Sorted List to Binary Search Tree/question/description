@@ -1,0 +1,11 @@
+Convert Sorted List to Binary Search Tree
+
+Given a singly linked list where elements are sorted in ascending order, convert it to a height-balanced BST. and its left sub tree is less shorter than then right one. then print the BST leaves from left to right.
+For this problem, a height-balanced binary tree is defined as a binary tree in which the depth of the two subtrees of every node never differ by more than 1.
+
+
+INPUT
+1 2 3 4 5 6 7 8 9
+
+OUTPUT
+1 4 6 9

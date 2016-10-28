@@ -1,0 +1,45 @@
+Linked List
+
+Definition for singly-linked list operations:
+
+Operation 0: visit and print all of the nodes in the singly linked list
+
+Operation 1: insert a node with value v in the kth(from 0) place in a singly linked list if available(0<=k<=len).
+
+For example:
+Given 1->2->3->4->5->NULL and v = 6, k = 5,
+return 1->2->3->4->5->6->NULL.
+
+Operation 2: delete all nodes with value v in a singly linked list if available.
+
+For example:
+Given 1->2->3->4->5->6->NULL and v = 6,
+return 1->2->3->4->5->NULL.
+
+Operation 3: rotate the list to the right by k places if available(k>=0).
+
+For example:
+Given 1->2->3->4->5->NULL and k = 2,
+return 4->5->1->2->3->NULL.
+
+Recommand definition for singly-linked list.
+ struct ListNode {
+     int val;
+     ListNode *next;
+     ListNode(int x) : val(x), next(NULL) {}
+ };
+
+Note: each element of linked-list is non-negative integer.
+
+INPUT
+1 2 3 4 5 -1	// link list, -1 is end mark
+5				// we have 5 operations
+0				// operation 0, print values
+1 6 5			// operation 1, insert 6 in 5th place
+2 6				// operation 2, delete all nodes that equals to 6
+3 2				// operation 3, rotate list with k = 2
+0				// operation 0, print values
+
+OUTPUT
+1 2 3 4 5
+4 5 1 2 3
