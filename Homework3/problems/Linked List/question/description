@@ -4,7 +4,7 @@ Definition for singly-linked list operations:
 
 Operation 0: visit and print all of the nodes in the singly linked list
 
-Operation 1: insert a node with value v in the kth(from 0) place in a singly linked list if available(0<=k<=len).
+Operation 1: insert a node with value v in the kth(from 0) place in a singly linked list if 0<=k<=len, insert in the tail if k>len.
 
 For example:
 Given 1->2->3->4->5->NULL and v = 6, k = 5,

@@ -57,6 +57,10 @@ vector<int> multiply(const Matrix *a, const Matrix *b, int depth) {
     if (depth == 1)
         return raw_multiply(a, b);
     vector<int> v;
+    if (depth == 0) {
+    	v.push_back(a->raw_data[0] * b->raw_data[0]);
+    	return v;
+	}
     for (int i=0; i<a->sizes[0]; i++) {
         for (int j=0; j<a->sizes[0]; j++) {
             vector<int> tv;
