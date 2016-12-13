@@ -1,7 +1,12 @@
 .cproject
 .project
 .settings
+
 __MACOSX
 .DS_Store
+
 *.exe
 *.o
+
+Debug
+*.vcxproj*

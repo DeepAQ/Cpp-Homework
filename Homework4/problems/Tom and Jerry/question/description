@@ -1,0 +1,45 @@
+﻿Tom is a cat, he can wake up his owner when he meows,
+Jerry is a mouse, he will escapes away when he hears Tom's meow.
+Tom wants to chase Jerry, and Jerry hides in his room. Owner will blame Tom by "you piece of shit." 
+and Jerry will make a "zhi" sound when he is caught by Tom. Owner will say to Tom: "well done."
+
+input is Tom and Jerry actions, and output is all the actions.
+
+T: Tom
+J: Jerry
+O: Tom's owner
+
+example 1:
+intput:
+T: meow
+T: meow
+T: chase
+J: hide
+
+output
+T: meow 				// input line 1
+J: escape
+O: What's up?
+T: meow 				// input line 2
+J: escape
+O: What's up?
+T: chase 				// input line 3
+J: run
+J: hide 				// input line 4
+O: you piece of shit.
+
+example 2:
+intput:
+T: meow
+T: chase
+T: catch
+
+output
+T: meow 				// input line 1
+J: escape
+O: What's up?
+T: chase 				// input line 2
+J: run
+T: catch 				// input line 3
+J: zhi
+O: well done.
